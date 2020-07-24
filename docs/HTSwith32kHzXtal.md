@@ -82,7 +82,7 @@ For designs that require the least amount of current consumption, it's recommend
 
 5. Flash the build
 
-   - Connect Ubuntu PC to USB2 port of the dev kit
+   - Connect PC to USB2 port of the dev kit
 
    - Flash the build
 
