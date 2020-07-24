@@ -107,8 +107,20 @@ For designs that require the least amount of current consumption, it's recommend
 
    - Click connect 
 
+     ![](../images/Connect.png)
+
+     
+
    - Select the Health Thermometer device
+
+     ![](../images/ClickHTS.png)
 
    - Temp shown
 
-7. 
+     ![](../images/Temp.png)
+
+     
+
+7. aaa
+
+8. 
