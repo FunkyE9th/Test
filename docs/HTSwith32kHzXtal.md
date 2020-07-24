@@ -6,7 +6,23 @@ For designs that require the least amount of current consumption, it's recommend
 
 **Prerequisites:**
 
-You have followed our [Getting Started Guide](ubuntu.md) and setup your development environment.
+- You have followed our [Getting Started Guide](ubuntu.md).
+
+- Install nRF Toolbox into an Android or iOS device.
 
 
+
+Steps
+
+1. Connect the 32.768kHz Crystal
+
+   - Unsolder R127 and R128 from the dev kit
+
+   - Short Solder Bridge SB8 and SB9
+
+     ![](../images/SolderBridge.PNG)
+
+     
+
+2. 
 
