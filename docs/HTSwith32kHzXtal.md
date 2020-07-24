@@ -8,7 +8,7 @@ For designs that require the least amount of current consumption, it's recommend
 
    - You have followed our [Getting Started Guide](ubuntu.md).
 
-   - Install nRF Toolbox into an Android or iOS device.
+   - Install [nRF Toolbox](https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Toolbox) into an Android or iOS device.
 
      
 
@@ -79,34 +79,20 @@ For designs that require the least amount of current consumption, it's recommend
 
      
 
-5. 
+5. Flash the build
 
+   - Connect Ubuntu PC to USB2 port of the dev kit
 
+   - Flash the build
 
+     ```
+     west flash
+     ```
 
+     After flashing, the module should automatically go into advertising mode.
 
+     
 
+6. Connect to the module using the nRF Toolbox
 
-Unmodified:
-
-```
-# 32kHz clock source 
-CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y 
-CONFIG_CLOCK_CONTROL_NRF_K32SRC_500PPM=y 
-```
-
-
-
-Modified to not use Internal RC:
-
-```
-# 32kHz clock source 
-#CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y 
-#CONFIG_CLOCK_CONTROL_NRF_K32SRC_500PPM=y 
-```
-
-
-
-1. 
-2. Modify the ~/zephyrproject/zephyr/boards/arm/
 
