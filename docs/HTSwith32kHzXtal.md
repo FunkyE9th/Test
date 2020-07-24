@@ -4,7 +4,7 @@ For designs that require the least amount of current consumption, it's recommend
 
 
 
-*Prerequisites:*
+***Prerequisites:***
 
 You have followed our Getting Started Guide and setup your development environment.
 
