@@ -77,7 +77,8 @@ For designs that require the least amount of current consumption, it's recommend
      west build -p auto -b bl654_dvk samples/bluetooth/peripheral_ht
      ```
 
-     
+
+   
 
 5. Flash the build
 
@@ -117,6 +118,5 @@ For designs that require the least amount of current consumption, it's recommend
 
      
 
-7. aaa
+   
 
-8. 
