@@ -97,7 +97,9 @@ For designs that require the least amount of current consumption, it's recommend
 
    - Launch nRFToolbox and then click HTM icon
 
-   - <img src="../images/ClickHTM.png" style="zoom:25%">
+     ![](../images/ClickHTM.png)
+
+     
 
      
 
