@@ -101,17 +101,13 @@ For designs that require the least amount of current consumption, it's recommend
 
      
 
-     
-
-     
-
    - Click connect 
 
      ![](../images/Connect.png)
 
      
 
-   - Select the Health Thermometer device
+   - Select the Zephyr Health Thermometer device
 
      ![](../images/ClickHTS.png)
 
