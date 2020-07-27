@@ -46,6 +46,8 @@ For designs that require the least amount of current consumption, it's recommend
 
    Modified 32kHz Clock Setting (i.e. set for external 32kHz Crystal):
 
+   Enable the external crystal by simply commenting out the 2 lines shown below.
+
    ```
    # 32kHz clock source 
    # CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y 
@@ -78,7 +80,7 @@ For designs that require the least amount of current consumption, it's recommend
      ```
 
 
-   
+
 
 5. Flash the build
 
