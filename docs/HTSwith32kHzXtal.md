@@ -96,7 +96,7 @@ For designs that require the least amount of current consumption, it's recommend
 
      
 
-6. Connect to the module using the nRF Toolbox
+6. Connect to the module using nRF Toolbox
 
    - Launch nRFToolbox and then click HTM icon
 
