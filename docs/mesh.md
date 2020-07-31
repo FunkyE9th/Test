@@ -115,6 +115,7 @@ The goal of this tutorial is to give you a simple example that can get you start
       - To flash
 
         ```
+        nrfjprog -f nrf52 --eraseall
         west flash
         ```
 

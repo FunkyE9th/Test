@@ -89,11 +89,12 @@ For designs that require the least amount of current consumption, it's recommend
    - Flash the build
 
      ```
+     nrfjprog -f nrf52 --eraseall
      west flash
-     ```
-
-     After flashing, the module should automatically go into advertising mode.
-
+   ```
+     
+   After flashing, the module should automatically go into advertising mode.
+     
      
 
 6. Connect to the module using nRF Toolbox
