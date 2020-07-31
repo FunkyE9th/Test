@@ -1,6 +1,6 @@
 # Getting Started with Mesh
 
-This tutorial will demonstrate how to bring up a Generic OnOff Model Server on the BL65x dev kit. We will provision 3 nodes (i.e. 3 Generic OnOff Server nodes) into the network and show you how the message to turn and LED on/off propagates in the network.
+This tutorial will demonstrate how to bring up a Generic OnOff Model Server nodes on the BL65x dev kit; so that we can turn LED1 on/off on the dev kit. We will provision 3 nodes into the network and show you how the message to turn LED on/off propagates in the network.
 
 The goal of this tutorial is to give you a simple example that can get you started on mesh right away. For a deeper dive into Bluetooth Mesh,  refer to the [Bluetooth Mesh Developer Study Guide](https://www.bluetooth.com/blog/bluetooth-mesh-developer-study-guide-v2-0/). 
 
