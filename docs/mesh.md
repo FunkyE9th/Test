@@ -146,27 +146,5 @@ The goal of this tutorial is to give you a simple example that can get you start
 
 8. Connect to the module using nRF Toolbox
 
-   - Launch nRFToolbox and then click HTM icon
-
-     ![](../images/ClickHTM.png)
-
-     
-
-   - Click connect 
-
-     ![](../images/Connect.png)
-
-     
-
-   - Select the Zephyr Health Thermometer device
-
-     ![](../images/ClickHTS.png)
-
-   - Temp shown
-
-     ![](../images/Temp.png)
-
-     
-
-   
+   - 
 
