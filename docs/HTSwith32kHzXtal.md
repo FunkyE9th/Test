@@ -6,7 +6,7 @@ For designs that require the least amount of current consumption, it's recommend
 
 1. Prerequisites
 
-   - You have followed our [Getting Started Guide](ubuntu.md).
+   - You have followed our [Zephyr Getting Started Guide](ubuntu.md).
 
    - Install [nRF Toolbox](https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Toolbox) into an Android or iOS device.
 
@@ -20,7 +20,7 @@ For designs that require the least amount of current consumption, it's recommend
 
      
 
-     ![](../images/SolderBridge.PNG)
+     ![](../images/xtal/SolderBridge.PNG)
 
      
 
@@ -100,23 +100,23 @@ For designs that require the least amount of current consumption, it's recommend
 
    - Launch nRFToolbox and then click HTM icon
 
-     ![](../images/ClickHTM.png)
+     ![](../images/xtal/ClickHTM.png)
 
      
 
    - Click connect 
 
-     ![](../images/Connect.png)
+     ![](../images/xtal/Connect.png)
 
      
 
    - Select the Zephyr Health Thermometer device
 
-     ![](../images/ClickHTS.png)
+     ![](../images/xtal/ClickHTS.png)
 
    - Temp shown
 
-     ![](../images/Temp.png)
+     ![](../images/xtal/Temp.png)
 
      
 
