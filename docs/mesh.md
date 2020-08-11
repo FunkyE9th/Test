@@ -137,21 +137,31 @@ The goal of this tutorial is to give you a simple example that can get you start
    
      ![AddNode1](../images/mesh/AddNode1.png)
    
+     
+   
    - Next click "PROVISION"
    
      ![Provision](../images/mesh/Provision.png)
+   
+     
    
    - Select "No OOB" and then click "OK"
    
      ![OOB](../images/mesh/OOB.png)
    
+     
+   
    - Provision complete, click "OK"
    
      ![ProvisionComplete](../images/mesh/ProvisionComplete.png)
    
+     
+   
    - Next click the provisioned node
    
      ![ClickProvsionedNode](../images/mesh/ClickProvsionedNode.png)
+   
+     
    
    - Click node name to rename. We will change it from "Zephyr" to "BL653".
    
@@ -162,25 +172,35 @@ The goal of this tutorial is to give you a simple example that can get you start
      ![OldName](../images/mesh/OldName.png)
    
      
-   
+	
      ![NewName](../images/mesh/NewName.png)
    
+     
+	
    - Next expand "Elements" pull down menu
    
      ![ExpandElement](../images/mesh/ExpandElement.png)
+	
+     
    
    - Click "Generic On Off Server"
    
      ![GenOnOffServer](../images/mesh/GenOnOffServer.png)
-	
+   
+     
+   
    - Click "BIND KEY"
    
      ![BindKey](../images/mesh/BindKey.png)
-	
+   
+     
+   
    - Click "Application Key 1"
    
      ![ClickKey](../images/mesh/ClickKey.png)
-	
+   
+     
+   
    - Bound App Key shown below
    
      ![BindedKey](../images/mesh/BoundKey.png)
@@ -195,11 +215,13 @@ The goal of this tutorial is to give you a simple example that can get you start
    
      ![SubscribeRename](../images/mesh/SubscribeRename.png)
    
+     
+   
    - BL653 node is now fully configured and is shown below. Next click "ADD NODE" and repeat above steps to provision and configure the other 2 nodes.
    
      ![BL653SetupComplete](../images/mesh/BL653SetupComplete.png)
    
-   - Repeat above for the 2 other nodes
+     
    
    - After provisioning all 3 nodes, navigate to the home screen of nRF Mesh and select "Groups" and then click "Building 1". NOTE: nRF Mesh app must be connected to one of the nodes.
    
