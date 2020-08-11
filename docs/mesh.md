@@ -12,7 +12,7 @@ The goal of this tutorial is to give you a simple example that can get you start
 
    - Install [nRF Mesh](https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Mesh) into an Android or iOS device. This will be used to provision the nodes and to turn on/off LED1 on the dev kit
 
-   - You have 3 dev BL65x dev kits. For this demo, we will use a BL562 (node1), BL653 (node2) and BL654 (node3).
+   - You have 3 BL65x dev kits. For this demo, we will use a BL562 (node1), BL653 (node2) and BL654 (node3).
 
      
 
