@@ -153,7 +153,7 @@ The goal of this tutorial is to give you a simple example that can get you start
    
      ![ClickProvsionedNode](../images/mesh/ClickProvsionedNode.png)
    
-   - Click node name to rename
+   - Click node name to rename. We will change it from "Zephyr" to "BL653"
    
      ![NodeName](../images/mesh/NodeName.png)
    
