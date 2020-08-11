@@ -121,8 +121,28 @@ The goal of this tutorial is to give you a simple example that can get you start
 
    
 
-4. Provision Nodes
+4. Provision the 3 nodes
 
+   - Power up all nodes
+   
+   - Optional: If you are powering the dev kit via the USB1 port, you can monitor debug messages with a terminal emulator (e.g. Tera Term) set to 115200, N, 8, 1. 
+   
+   - Launch the nRF Mesh and then click "ADD NODE". You should see the 3 nodes as shown below. Click one of the nodes
+   
+     ![3Nodes](../images/mesh/3Nodes.png)
+   
+     
+   
+   - Next click "IDENTIFY"
+   
+     
+   
+   - a
+   
+   - d
+   
+   - g
+   
    - 
 
 
