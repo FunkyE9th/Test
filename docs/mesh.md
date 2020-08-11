@@ -143,7 +143,7 @@ The goal of this tutorial is to give you a simple example that can get you start
    
    - Select No OOB
    
-     ![OOB](C:\GitHub\Test\images\mesh\OOB.png)
+     ![OOB](../images/mesh/OOB.png)
    
    - Provision Complete
    
@@ -189,7 +189,13 @@ The goal of this tutorial is to give you a simple example that can get you start
    
      ![SubscribeRename](../images/mesh/SubscribeRename.png)
    
-   - 
+     Repeat above for the 2 other nodes
+   
+     ![BL653SetupComplete](C:\GitHub\Test\images\mesh\BL653SetupComplete.png)
+   
+   - Repeat above for the 2 other nodes
+   
+   - After provisioning all three, go back to home screen.
    
    - a
    
