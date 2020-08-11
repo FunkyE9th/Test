@@ -165,11 +165,11 @@ The goal of this tutorial is to give you a simple example that can get you start
    
      ![NewName](../images/mesh/NewName.png)
    
-     
-   
-   - On Off Server
+   - Next expand Elements pull down menu
    
      ![ExpandElement](../images/mesh/ExpandElement.png)
+   
+   - Click Generic On Off Server
    
      ![GenOnOffServer](../images/mesh/GenOnOffServer.png)
    
