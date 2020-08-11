@@ -172,16 +172,22 @@ The goal of this tutorial is to give you a simple example that can get you start
    - Click Generic On Off Server
    
      ![GenOnOffServer](../images/mesh/GenOnOffServer.png)
+	
+   - Click Bind Key
    
      ![BindKey](../images/mesh/BindKey.png)
+	
+   - Click Application Key 1
    
      ![ClickKey](../images/mesh/ClickKey.png)
+	
+   - Bound App Keys shown below
    
-     ![BindedKey](../images/mesh/BindedKey.png)
+     ![BindedKey](../images/mesh/BoundKey.png)
    
      
    
-   - Subscriber
+   - Next setup subscription, by clicking subribe and creating a group called "Building 1"
    
      ![Susbcribe](../images/mesh/Susbcribe.png)
    
@@ -189,7 +195,7 @@ The goal of this tutorial is to give you a simple example that can get you start
    
      ![SubscribeRename](../images/mesh/SubscribeRename.png)
    
-     Repeat above for the 2 other nodes
+   - Repeat above for the 2 other nodes
    
      ![BL653SetupComplete](C:\GitHub\Test\images\mesh\BL653SetupComplete.png)
    
