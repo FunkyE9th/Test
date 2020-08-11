@@ -125,7 +125,7 @@ The goal of this tutorial is to give you a simple example that can get you start
 
    - Power up all 3 nodes
    
-   - Optional: If you are powering the dev kit via the USB1 port, you can monitor debug messages with a terminal emulator (e.g. Tera Term) set to 115200, N, 8, 1. 
+   - Optional: If you are powering the dev kit via the USB1 port, you can monitor debug messages (e.g. See TTL count as message hop from node to node) with a terminal emulator (e.g. Tera Term) set to 115200, N, 8, 1. 
    
    - Launch the nRF Mesh and then click "ADD NODE". You should see the 3 nodes as shown below. To provision, click one of the nodes.
    
@@ -141,19 +141,19 @@ The goal of this tutorial is to give you a simple example that can get you start
    
      ![Provision](../images/mesh/Provision.png)
    
-   - Select No OOB
+   - Select "No OOB" and then click "OK"
    
      ![OOB](../images/mesh/OOB.png)
    
-   - Provision Complete
+   - Provision complete, click "OK"
    
      ![ProvisionComplete](../images/mesh/ProvisionComplete.png)
    
-   - Click the provisioned node
+   - Next click the provisioned node
    
      ![ClickProvsionedNode](../images/mesh/ClickProvsionedNode.png)
    
-   - Click node name to rename. We will change it from "Zephyr" to "BL653"
+   - Click node name to rename. We will change it from "Zephyr" to "BL653".
    
      ![NodeName](../images/mesh/NodeName.png)
    
@@ -165,29 +165,29 @@ The goal of this tutorial is to give you a simple example that can get you start
    
      ![NewName](../images/mesh/NewName.png)
    
-   - Next expand Elements pull down menu
+   - Next expand "Elements" pull down menu
    
      ![ExpandElement](../images/mesh/ExpandElement.png)
    
-   - Click Generic On Off Server
+   - Click "Generic On Off Server"
    
      ![GenOnOffServer](../images/mesh/GenOnOffServer.png)
 	
-   - Click Bind Key
+   - Click "BIND KEY"
    
      ![BindKey](../images/mesh/BindKey.png)
 	
-   - Click Application Key 1
+   - Click "Application Key 1"
    
      ![ClickKey](../images/mesh/ClickKey.png)
 	
-   - Bound App Keys shown below
+   - Bound App Key shown below
    
      ![BindedKey](../images/mesh/BoundKey.png)
    
      
    
-   - Next setup subscription, by clicking subribe and creating a group called "Building 1"
+   - Next setup subscription, by clicking "SUBSCRIBE". We will create and subscribe to a group called "Building 1". This group will be used to turn LED1 on/off on all 3 nodes.
    
      ![Susbcribe](../images/mesh/Susbcribe.png)
    
@@ -195,7 +195,7 @@ The goal of this tutorial is to give you a simple example that can get you start
    
      ![SubscribeRename](../images/mesh/SubscribeRename.png)
    
-   - Repeat above for the 2 other nodes
+   - BL653 node is now fully configured and is shown below. Next click "ADD NODE" and repeat above steps to provision and configure the other 2 nodes.
    
      ![BL653SetupComplete](C:\GitHub\Test\images\mesh\BL653SetupComplete.png)
    
