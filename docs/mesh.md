@@ -197,18 +197,18 @@ The goal of this tutorial is to give you a simple example that can get you start
    
    - BL653 node is now fully configured and is shown below. Next click "ADD NODE" and repeat above steps to provision and configure the other 2 nodes.
    
-     ![BL653SetupComplete](C:\GitHub\Test\images\mesh\BL653SetupComplete.png)
+     ![BL653SetupComplete](../images/mesh/BL653SetupComplete.png)
    
    - Repeat above for the 2 other nodes
    
-   - After provisioning all 3, on the nRF Mesh home screen select "Groups" and then click "Building 1". You should 
+   - After provisioning all 3 nodes, navigate to the home screen of nRF Mesh and select "Groups" and then click "Building 1". NOTE: nRF Mesh app must be connected to one of the nodes.
    
-     ![Bldg1Group](C:\GitHub\Test\images\mesh\Bldg1Group.png)
+     ![Bldg1Group](../images/mesh/Bldg1Group.png)
    
      
    
    - Toggle LEDs on/off by clicking "ON" or "OFF"
    
-     ![OnOffBldg1](C:\GitHub\Test\images\mesh\OnOffBldg1.png)
+     ![OnOffBldg1](../images/mesh/OnOffBldg1.png)
    
      
