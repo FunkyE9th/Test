@@ -121,13 +121,13 @@ The goal of this tutorial is to give you a simple example that can get you start
 
    
 
-4. Provision the 3 nodes
+4. Provision nodes, enable Generic On Off Model  and setup a Subscription
 
    - Power up all 3 nodes
    
    - Optional: If you are powering the dev kit via the USB1 port, you can monitor debug messages with a terminal emulator (e.g. Tera Term) set to 115200, N, 8, 1. 
    
-   - Launch the nRF Mesh and then click "ADD NODE". You should see the 3 nodes as shown below. Click one of the nodes
+   - Launch the nRF Mesh and then click "ADD NODE". You should see the 3 nodes as shown below. To provision, click one of the nodes.
    
      ![3Nodes](../images/mesh/3Nodes.png)
    
@@ -151,7 +151,7 @@ The goal of this tutorial is to give you a simple example that can get you start
    
    - Click the provisioned node
    
-     ![ClickProvsionedNode](../images/mesh/ClickProvsionedNode.png)![OldName](C:\GitHub\Test\images\mesh\OldName.png)
+     ![ClickProvsionedNode](../images/mesh/ClickProvsionedNode.png)
    
    - Click node name to rename
    
@@ -167,7 +167,27 @@ The goal of this tutorial is to give you a simple example that can get you start
    
      
    
-   - Rename
+   - On Off Server
+   
+     ![ExpandElement](C:\GitHub\Test\images\mesh\ExpandElement.png)
+   
+     ![GenOnOffServer](C:\GitHub\Test\images\mesh\GenOnOffServer.png)
+   
+     ![BindKey](C:\GitHub\Test\images\mesh\BindKey.png)
+   
+     ![ClickKey](../images/mesh/ClickKey.png)
+   
+     ![BindedKey](C:\GitHub\Test\images\mesh\BindedKey.png)
+   
+     
+   
+   - Subscriber
+   
+     ![Susbcribe](C:\GitHub\Test\images\mesh\Susbcribe.png)
+   
+     ![SubsribeOrginalName](C:\GitHub\Test\images\mesh\SubsribeOrginalName.png)
+   
+     ![SubscribeRename](C:\GitHub\Test\images\mesh\SubscribeRename.png)
    
    - 
    
