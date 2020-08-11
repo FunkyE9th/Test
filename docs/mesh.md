@@ -1,6 +1,6 @@
 # Getting Started with Mesh
 
-This tutorial will demonstrate how to bring up a Generic OnOff Model Server nodes on the BL65x dev kit; so that we can turn LED1 on/off on the dev kit. We will provision 3 nodes into the network and show you how the message to turn LED on/off propagates in the network.
+This tutorial will demonstrate how to bring up a Generic OnOff Model Server on a BL65x dev kit (i.e. LED1 on the dev kit will be turned on/off). We will provision 3 nodes into the network. All 3 nodes will be configured as Generic OnOff Model Servers. All 3 nodes will also subscribe to a same group; so that LED1 on all nodes can be toggled on/off at the same time.
 
 The goal of this tutorial is to give you a simple example that can get you started on mesh right away. For a deeper dive into Bluetooth Mesh,  refer to the [Bluetooth Mesh Developer Study Guide](https://www.bluetooth.com/blog/bluetooth-mesh-developer-study-guide-v2-0/). 
 
@@ -201,35 +201,14 @@ The goal of this tutorial is to give you a simple example that can get you start
    
    - Repeat above for the 2 other nodes
    
-   - After provisioning all three, go back to home screen.
+   - After provisioning all 3, on the nRF Mesh home screen select "Groups" and then click "Building 1". You should 
    
-   - a
+     ![Bldg1Group](C:\GitHub\Test\images\mesh\Bldg1Group.png)
    
-   - a
-   
-   - a
-
-
-
-5. 
-
-6. sss
-
-7. Flash the build
-
-   - Connect PC to USB2 port of the dev kit
-
-   - Flash the build
-
-     ```
-     west flash
-     ```
-
-     After flashing, the module should automatically go into advertising mode.
-
      
-
-8. Connect to the module using nRF Toolbox
-
-   - 
-
+   
+   - Toggle LEDs on/off by clicking "ON" or "OFF"
+   
+     ![OnOffBldg1](C:\GitHub\Test\images\mesh\OnOffBldg1.png)
+   
+     
