@@ -123,7 +123,7 @@ The goal of this tutorial is to give you a simple example that can get you start
 
 4. Provision the 3 nodes
 
-   - Power up all nodes
+   - Power up all 3 nodes
    
    - Optional: If you are powering the dev kit via the USB1 port, you can monitor debug messages with a terminal emulator (e.g. Tera Term) set to 115200, N, 8, 1. 
    
@@ -135,15 +135,47 @@ The goal of this tutorial is to give you a simple example that can get you start
    
    - Next click "IDENTIFY"
    
+     ![AddNode1](../images/mesh/AddNode1.png)
+   
+   - Next click "PROVISION"
+   
+     ![Provision](../images/mesh/Provision.png)
+   
+   - Select No OOB
+   
+     ![OOB](C:\GitHub\Test\images\mesh\OOB.png)
+   
+   - Provision Complete
+   
+     ![ProvisionComplete](../images/mesh/ProvisionComplete.png)
+   
+   - Click the provisioned node
+   
+     ![ClickProvsionedNode](../images/mesh/ClickProvsionedNode.png)![OldName](C:\GitHub\Test\images\mesh\OldName.png)
+   
+   - Click node name to rename
+   
+     ![NodeName](../images/mesh/NodeName.png)
+   
      
+   
+     ![OldName](../images/mesh/OldName.png)
+   
+     
+   
+     ![NewName](../images/mesh/NewName.png)
+   
+     
+   
+   - Rename
+   
+   - 
    
    - a
    
-   - d
+   - a
    
-   - g
-   
-   - 
+   - a
 
 
 
