@@ -1,6 +1,6 @@
 # Getting Started with Mesh
 
-This tutorial will demonstrate how to bring up a Generic OnOff Model Server on a BL65x dev kit (i.e. LED1 on the dev kit will be turned on/off). We will provision 3 nodes into the network. All 3 nodes will be configured as Generic OnOff Model Servers. All 3 nodes will also subscribe to a same group; so that LED1 on all nodes can be toggled on/off at the same time.
+This tutorial will demonstrate how to bring up a Generic OnOff Model Server on a BL65x dev kit (i.e. LED1 on the dev kit will be turned on/off). We will provision 3 nodes into the network. All 3 nodes will be configured as Generic OnOff Model Servers. To allow us to simultaneously toggle LED1 on/off all nodes, the nodes will also be configured to subscribe to a group.
 
 The goal of this tutorial is to give you a simple example that can get you started on mesh right away. For a deeper dive into Bluetooth Mesh,  refer to the [Bluetooth Mesh Developer Study Guide](https://www.bluetooth.com/blog/bluetooth-mesh-developer-study-guide-v2-0/). 
 
@@ -10,17 +10,13 @@ The goal of this tutorial is to give you a simple example that can get you start
 
    - You have followed our [Zephyr Getting Started Guide](ubuntu.md).
 
-   - Install [nRF Mesh](https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Mesh) into an Android or iOS device. This will be used to provision the nodes and to turn on/off LED1 on the dev kit
+   - Install [nRF Mesh](https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Mesh) into an Android or iOS device. This will be used to provision and configure the nodes, and to turn on/off LED1 on the dev kit.
 
    - You have 3 BL65x dev kits. For this demo, we will use a BL562 (node1), BL653 (node2) and BL654 (node3).
 
      
 
-2. Setup
-
-   
-
-3. Build the Mesh Sample app
+2. Build the Mesh Sample app
 
    1. Replace main.c from ../samples/bluetooth/mesh/src/main.c with this [main.c](../src/mesh/main.c)
 
@@ -47,7 +43,7 @@ The goal of this tutorial is to give you a simple example that can get you start
 
    3. Build and flash node 1
 
-      For this demo we will use the BL652 for node 1
+      For this demo we will use the BL652 dev kit for node 1
 
       - To build for BL652:
 
@@ -59,14 +55,15 @@ The goal of this tutorial is to give you a simple example that can get you start
       - To flash
 
         ```
+        nrfjprog -e
         west flash
-        ```
-
+      ```
+        
         
 
    4. Build and flash for node 2
 
-      For this demo will use the BL653 for node 2
+      For this demo will use the BL653 dev kit for node 2
 
       - Modify main.c to use the node 2 UUID
 
@@ -88,12 +85,13 @@ The goal of this tutorial is to give you a simple example that can get you start
       - To flash
 
         ```
+        nrfjprog -e
         west flash
         ```
 
    5. Build and flash for node 3
 
-      For this demo will use the BL654 for node 3
+      For this demo will use the BL654 dev kit for node 3
 
       - Modify main.c to use the node 3 UUID
 
@@ -115,7 +113,7 @@ The goal of this tutorial is to give you a simple example that can get you start
       - To flash
 
         ```
-        nrfjprog -f nrf52 --eraseall
+        nrfjprog -e
         west flash
         ```
 
@@ -123,7 +121,7 @@ The goal of this tutorial is to give you a simple example that can get you start
 
 4. Provision nodes, enable Generic On Off Model  and setup a Subscription
 
-   - Power up all 3 nodes
+   - Now that all nodes are flashed, power up all 3 nodes.
    
    - Optional: If you are powering the dev kit via the USB1 port, you can monitor debug messages (e.g. See TTL count as message hop from node to node) with a terminal emulator (e.g. Tera Term) set to 115200, N, 8, 1. 
    
@@ -223,13 +221,13 @@ The goal of this tutorial is to give you a simple example that can get you start
    
      
    
-   - After provisioning all 3 nodes, navigate to the home screen of nRF Mesh and select "Groups" and then click "Building 1". NOTE: nRF Mesh app must be connected to one of the nodes.
+   - After provisioning all 3 nodes, navigate to the home screen of nRF Mesh app and select "Groups" and then click "Building 1". NOTE: nRF Mesh app must be connected to one of the nodes.
    
      ![Bldg1Group](../images/mesh/Bldg1Group.png)
    
      
    
-   - Toggle LEDs on/off by clicking "ON" or "OFF"
+   - Toggle LEDs on/off by clicking "ON" or "OFF". You should see LED1 on all nodes go on/off.
    
      ![OnOffBldg1](../images/mesh/OnOffBldg1.png)
    
