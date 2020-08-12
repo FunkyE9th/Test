@@ -57,7 +57,7 @@ The goal of this tutorial is to give you a simple example that can get you start
         ```
         nrfjprog -e
         west flash
-      ```
+        ```
         
 
    4. Build and flash for node 2
