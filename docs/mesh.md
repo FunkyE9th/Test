@@ -54,6 +54,8 @@ The goal of this tutorial is to give you a simple example that can get you start
 
       - To flash
 
+        Before flashing make sure you fully erase the module first. 
+        
         ```
         nrfjprog -e
         west flash
@@ -83,6 +85,8 @@ The goal of this tutorial is to give you a simple example that can get you start
 
       - To flash
 
+        Before flashing make sure you fully erase the module first. 
+        
         ```
         nrfjprog -e
         west flash
@@ -111,6 +115,8 @@ The goal of this tutorial is to give you a simple example that can get you start
 
       - To flash
 
+        Before flashing make sure you fully erase the module first. 
+        
         ```
         nrfjprog -e
         west flash
