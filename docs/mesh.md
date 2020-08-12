@@ -59,7 +59,6 @@ The goal of this tutorial is to give you a simple example that can get you start
         west flash
       ```
         
-        
 
    4. Build and flash for node 2
 
