@@ -123,7 +123,7 @@ The goal of this tutorial is to give you a simple example that can get you start
 
    - Now that all nodes are flashed, power up all 3 nodes.
    
-   - Optional: If you are powering the dev kit via the USB1 port, you can monitor debug messages (e.g. See TTL count as message hop from node to node) with a terminal emulator (e.g. Tera Term) set to 115200, N, 8, 1. 
+   - Optional: If you are powering the dev kit via the USB1 port, you can monitor debug messages with a terminal emulator (e.g. Tera Term) set to 115200, N, 8, 1. 
    
    - Launch the nRF Mesh and then click "ADD NODE". You should see the 3 nodes as shown below. To provision, click one of the nodes.
    
