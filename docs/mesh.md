@@ -1,6 +1,6 @@
 # Getting Started with Mesh
 
-This tutorial will demonstrate how to bring up a Generic OnOff Model Server on a BL65x dev kit (i.e. LED1 on the dev kit will be turned on/off). We will provision 3 nodes into the network. All 3 nodes will be configured as Generic OnOff Model Servers. To allow us to simultaneously toggle LED1 on/off all nodes, the nodes will also be configured to subscribe to a group.
+This tutorial will demonstrate how to bring up a Generic OnOff Model Server on a BL65x dev kit. We will provision three nodes into the network. All three nodes will be configured as Generic OnOff Model Servers. To allow us to simultaneously toggle LED1 on/off on all nodes, the nodes will also be configured to subscribe to a group.
 
 The goal of this tutorial is to give you a simple example that can get you started on mesh right away. For a deeper dive into Bluetooth Mesh,  refer to the [Bluetooth Mesh Developer Study Guide](https://www.bluetooth.com/blog/bluetooth-mesh-developer-study-guide-v2-0/). 
 
@@ -12,7 +12,7 @@ The goal of this tutorial is to give you a simple example that can get you start
 
    - Install [nRF Mesh](https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Mesh) into an Android or iOS device. This will be used to provision and configure the nodes, and to turn on/off LED1 on the dev kit.
 
-   - You have 3 BL65x dev kits. For this demo, we will use a BL562 (node1), BL653 (node2) and BL654 (node3).
+   - You have three BL65x dev kits. Two dev kits will also work. For this demo, we will use a BL562 (node1), BL653 (node2) and BL654 (node3). 
 
      
 
