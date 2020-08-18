@@ -1,101 +1,108 @@
-# Enabling the 32kHz Crystal on the BL65x Dev Kit
+# How to map LED0 GPIO to the BL654 Dongle's (451-00004) LED
 
-For designs that require the least amount of current consumption, it's recommended that you use an external +/- 20ppm 32.768kHz crystal. Laird's BL65x dev kit comes with the 32.768kHz crystal. However, the default setting is not connected (i.e. configured for the internal RC). This tutorial will show you how to connect the 32.768 kHz, and then build the Health Thermometer sample app so that it works with the external 32.768kHz crystal.
+Currently, the BL654 dongle (Part Number: 451-00004) does not have its own Zephyr board files. However, with some minor modifications, we can use Nordic Semiconductor's nrf52840 dongle board files with the BL654 dongle.
+
+In this tutorial, we will show you how to modify the devicetree from the nrf52840 dongle board files, so that the correct GPIO is mapped to the BL654 dongle's LED. We will then build the Blinky sample app and flash it into the BL654 dongle.
+
+If you are not familiar with device trees, please refer to [Zephyr Devicetree](https://docs.zephyrproject.org/latest/guides/dts/index.html).
 
 
 
 1. Prerequisites
 
-   - You have followed our [Zephyr Getting Started Guide](ubuntu.md).
+   - You followed our [Zephyr Getting Started Guide](ubuntu.md) on how to setup the Zephyr development environment (i.e. Steps 1 - 5).
 
-   - Install [nRF Toolbox](https://www.nordicsemi.com/Software-and-tools/Development-Tools/nRF-Toolbox) into an Android or iOS device.
+   - Install nRFutil
 
-     
+     ```
+     pip3 install nrfutil
+     ```
 
-2. Connect the 32.768kHz Crystal
-
-   - Unsolder R127 and R128 from the dev kit
-
-   - Short Solder Bridge SB8 and SB9
+     nRFutil is a command-line utility that supports Device Firmware Updates (DFU). We will use it to generate a firmware update package and flash the package into the dongle.
 
      
 
-     ![](../images/xtal/SolderBridge.PNG)
+2. Modify the device tree
 
-     
+   There are 2 required changes:
 
-3. Modify the bl65x_dvk_defconfig file
+   - Map the correct GPIO to the BL654 dongle's LED. BL654 uses GPIO13.
+   - Change the pin configuration so that it's active high
 
-   For BL652, modify  ~/zephyrproject/zephyr/boards/arm/bl652_dvk/bl652_dvk_defconfig 
+   
 
-   For BL653, modify  ~/zephyrproject/zephyr/boards/arm/bl653_dvk/bl653_dvk_defconfig 
+   Open ~/zephyrproject/zephyr/boards/arm/nrf52840dongle_nrf52840/nrf52840dongle_nrf52840.dts with a text editor and modify the device tree as shown below.
 
-   For BL654, modify  ~/zephyrproject/zephyr/boards/arm/bl654_dvk/bl654_dvk_defconfig
+   
 
-    
-
-   Unmodified 32kHz Clock Setting (i.e. set for internal RC):
+   Original:
 
    ```
-   # 32kHz clock source 
-   CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y 
-   CONFIG_CLOCK_CONTROL_NRF_K32SRC_500PPM=y 
+   	leds {
+   		compatible = "gpio-leds";
+   		led0_green: led_0 {
+   			gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;
+   			label = "Green LED 0";
+   		};
+   		.
+   		.
+   		.
    ```
 
    
 
-   Modified 32kHz Clock Setting (i.e. set for external 32kHz Crystal):
+   Modified:
 
-   Enable the external crystal by simply commenting out the 2 lines shown below.
-
-   ```
-   # 32kHz clock source 
-   # CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y 
-   # CONFIG_CLOCK_CONTROL_NRF_K32SRC_500PPM=y 
-   ```
-
+   	leds {
+   		compatible = "gpio-leds";
+   		led0_green: led_0 {
+   			gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
+   			label = "Green LED 0";
+   		};
+   		.
+   		.
+   		.	
    
 
-4. Build the Health Thermometer App
+3. Build Blinky
 
-   - Build for BL652
+   ```
+cd ~/zephyrproject/zephyr
+   west build -p auto -b nrf52840dongle_nrf52840 samples/basic/blinky 
+```
+   
+ 
+   
+4. Create DFU package
 
-     ```
-     cd ~/zephyrproject/zephyr
-     west build -p auto -b bl652_dvk samples/bluetooth/peripheral_ht 
-     ```
-
-   - Build for BL653
-
-     ```
-     cd ~/zephyrproject/zephyr
-     west build -p auto -b bl653_dvk samples/bluetooth/peripheral_ht
-     ```
-
-   - Build for BL654
-
-     ```
-     cd ~/zephyrproject/zephyr
-     west build -p auto -b bl654_dvk samples/bluetooth/peripheral_ht
-     ```
+   ```
+nrfutil pkg generate --hw-version 52 --application build/zephyr/zephyr.hex --application-version 1 --sd-req 0x00 blinky.zip 
+   ```
+   
+   
 
 
+5. Flash the update package into the dongle
 
+   - Connect dongle to the PC
 
-5. Flash the build
+     Make sure the dongle is in bootloader mode, by pressing the reset button on the dongle. If in bootloader mode, you should  see the LED fade in and out slowly.
 
-   - Connect PC to USB2 port of the dev kit
+     ![ResetButton](C:\GitHub\Test\images\dongle\ResetButton.PNG)
+
+   - On terminal type *dmesg*
 
    - Flash the build
 
      ```
-     nrfjprog -f nrf52 --eraseall
-     west flash
+     nrfutil dfu serial -pkg blinky.zip -p /dev/ttyACM0 
+     ```
    ```
      
    After flashing, the module should automatically go into advertising mode.
      
      
+   ```
 
 6. Connect to the module using nRF Toolbox
 
