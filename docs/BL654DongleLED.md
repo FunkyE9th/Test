@@ -1,4 +1,4 @@
-# How to map LED0 GPIO to the BL654 Dongle's (451-00004) LED
+# How to map LED0 to the BL654 Dongle's (451-00004) LED
 
 Currently, the BL654 dongle (Part Number: 451-00004) does not have its own Zephyr board files. However, with some minor modifications, we can use Nordic Semiconductor's nrf52840 dongle board files with the BL654 dongle.
 
@@ -10,7 +10,7 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
 
 1. Prerequisites
 
-   - You followed our [Zephyr Getting Started Guide](ubuntu.md) on how to setup the Zephyr development environment (i.e. Steps 1 - 5).
+   - You followed our [Zephyr Getting Started Guide](ubuntu.md) on how to setup the Zephyr development environment (i.e. Steps 1 - 5)
 
    - Install nRFutil
 
@@ -22,16 +22,16 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
 
      
 
-2. Modify the device tree
+2. Modify the devicetree
 
    There are 2 required changes:
 
    - Map the correct GPIO to the BL654 dongle's LED. BL654 uses GPIO13.
-   - Change the pin configuration so that it's active high
+   - Change the pin configuration so that it's active high 
 
    
 
-   Open ~/zephyrproject/zephyr/boards/arm/nrf52840dongle_nrf52840/nrf52840dongle_nrf52840.dts with a text editor and modify the device tree as shown below.
+   Open ~/zephyrproject/zephyr/boards/arm/nrf52840dongle_nrf52840/nrf52840dongle_nrf52840.dts with a text editor and modify the devicetree as shown below.
 
    
 
@@ -85,7 +85,7 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
 
    - Connect dongle to the PC
 
-     Make sure the dongle is in bootloader mode by pressing the reset button on the dongle. If in bootloader mode, you should  see the LED fade in and out slowly.
+     Make sure the dongle is in bootloader mode by pressing the reset button on the dongle. In bootloader mode, you should  see the LED fade in and out slowly.
 
      ![ResetButton](../images/dongle/ResetButton.PNG)
 
