@@ -85,11 +85,23 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
 
    - Connect dongle to the PC
 
-     Make sure the dongle is in bootloader mode, by pressing the reset button on the dongle. If in bootloader mode, you should  see the LED fade in and out slowly.
+     Make sure the dongle is in bootloader mode by pressing the reset button on the dongle. If in bootloader mode, you should  see the LED fade in and out slowly.
 
      ![ResetButton](../images/dongle/ResetButton.PNG)
 
-   - On terminal type *dmesg*
+   - Determine the USB port to use for flashing
+
+     ```
+     dmesg
+     ```
+
+     You should see something like below. In this case we have port ttyACM0. So we will use /dev/ttyACM0. Your PC might have a different port.
+
+     
+
+     ![ttyACM0](../images/dongle/ttyACM0.png)
+
+     
 
    - Flash the build
 
