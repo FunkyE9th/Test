@@ -53,6 +53,7 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
 
    Modified:
 
+   ```
    	leds {
    		compatible = "gpio-leds";
    		led0_green: led_0 {
@@ -61,8 +62,8 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
    		};
    		.
    		.
-   		.	
-   
+   		.
+   ```
 
 3. Build Blinky
 
