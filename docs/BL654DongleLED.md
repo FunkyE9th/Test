@@ -89,13 +89,13 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
 
      ![ResetButton](../images/dongle/ResetButton.PNG)
 
-   - Determine the USB port to use for flashing
+   - Determine which USB port to use for flashing
 
      ```
      dmesg
      ```
 
-     You should see something like below. In this case we have port ttyACM0. So we will use /dev/ttyACM0. Your PC might have a different port.
+     You should see something similar to the screenshot below. In this case, we have port ttyACM0. So we will use /dev/ttyACM0. Your PC might have a different port.
 
      
 
