@@ -108,36 +108,7 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
      ```
      nrfutil dfu serial -pkg blinky.zip -p /dev/ttyACM0 
      ```
-   ```
      
-   After flashing, the module should automatically go into advertising mode.
+     You should now see the LED blink at a rate of 1 per second (i.e. it should not be fading in/out).
      
      
-   ```
-
-6. Connect to the module using nRF Toolbox
-
-   - Launch nRFToolbox and then click HTM icon
-
-     ![](../images/xtal/ClickHTM.png)
-
-     
-
-   - Click connect 
-
-     ![](../images/xtal/Connect.png)
-
-     
-
-   - Select the Zephyr Health Thermometer device
-
-     ![](../images/xtal/ClickHTS.png)
-
-   - Temp shown
-
-     ![](../images/xtal/Temp.png)
-
-     
-
-   
-
