@@ -66,7 +66,7 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
 3. Build Blinky
 
    ```
-cd ~/zephyrproject/zephyr
+   cd ~/zephyrproject/zephyr
    west build -p auto -b nrf52840dongle_nrf52840 samples/basic/blinky 
    ```
    
