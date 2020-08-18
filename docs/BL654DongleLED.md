@@ -75,7 +75,7 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
 4. Create DFU package
 
    ```
-nrfutil pkg generate --hw-version 52 --application build/zephyr/zephyr.hex --application-version 1 --sd-req 0x00 blinky.zip 
+   nrfutil pkg generate --hw-version 52 --application build/zephyr/zephyr.hex --application-version 1 --sd-req 0x00 blinky.zip 
    ```
    
    
