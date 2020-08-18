@@ -87,7 +87,7 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
 
      Make sure the dongle is in bootloader mode, by pressing the reset button on the dongle. If in bootloader mode, you should  see the LED fade in and out slowly.
 
-     ![ResetButton](C:\GitHub\Test\images\dongle\ResetButton.PNG)
+     ![ResetButton](../images/dongle/ResetButton.PNG)
 
    - On terminal type *dmesg*
 
