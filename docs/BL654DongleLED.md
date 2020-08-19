@@ -83,9 +83,11 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
 
 5. Flash the update package into the dongle
 
-   - Connect dongle to the PC
+   - Plug the dongle into the PC and put it into Bootloader Mode
 
-     Make sure the dongle is in bootloader mode by pressing the reset button on the dongle. In bootloader mode, you should  see the LED fade in and out slowly.
+     To put into Bootloader Mode, press the reset button on the dongle. In bootloader mode, you should  see the LED fade in and out slowly. 
+
+     
 
      ![ResetButton](../images/dongle/ResetButton.PNG)
 
@@ -95,7 +97,7 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
      dmesg
      ```
 
-     You should see something similar to the screenshot below. In this case, we have port ttyACM0. So we will use /dev/ttyACM0. Your PC might have a different port.
+     Whenever the dongle goes into Bootloader Mode, it should enumerate as a USB device. When you do a dmesg, you should see something similar to the screenshot below. In this case, we have port ttyACM0; so we will use /dev/ttyACM0. Your PC might have a different port.
 
      
 
@@ -109,6 +111,26 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
      nrfutil dfu serial -pkg blinky.zip -p /dev/ttyACM0 
      ```
      
-     You should now see the LED blink at a rate of 1 per second (i.e. it should not be fading in/out).
+     
+     
+     If  flashing is successful, you should now see the LED blink at a rate of 1 per second (i.e. it should not be fading in/out).
+     
+     
+     
+     if you get an Permission Denied error as shown below, you need to add your username to the dialout group.
+     
+     
+     
+     ![PermissionError13](C:\GitHub\Test\images\dongle\PermissionError13.png)
+     
+     
+     
+     To add your username to dialout do the following:
+     
+     ```
+     sudo adduser your_username dialout 
+     ```
+     
+     
      
      
