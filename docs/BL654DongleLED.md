@@ -97,7 +97,7 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
      dmesg
      ```
 
-     Whenever the dongle goes into Bootloader Mode, it should enumerate as a USB device. When you do a dmesg, you should see something similar to the screenshot below. In this case, we have port ttyACM0; so we will use /dev/ttyACM0. Your PC might have a different port.
+     Whenever the dongle goes into Bootloader Mode, it should enumerate as a USB device. When you do a dmesg, you should see something similar to the screenshot below. In this case, we have port ttyACM0; so we will use /dev/ttyACM0 port for flashing. Your PC might have a different port.
 
      
 
