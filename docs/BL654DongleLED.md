@@ -117,7 +117,7 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
      
      
      
-     If you get an Permission Denied error as shown below, you need to add your username to the dialout group.
+     If you get a Permission Denied error as shown below, you need to add your username to the dialout group.
      
      
      
