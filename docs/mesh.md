@@ -83,7 +83,7 @@ The goal of this tutorial is to give you a simple example that can get you start
         west build -p auto -b bl653_dvk samples/bluetooth/mesh 
         ```
 
-      - To flash
+      - To flash connect PC to USB2 port of dev kit
 
         Before flashing make sure you fully erase the module first. 
         
@@ -106,14 +106,14 @@ The goal of this tutorial is to give you a simple example that can get you start
 
         
 
-      - To build for BL654
+      - To build for BL654 connect PC to USB2 port of dev kit
 
         ```
         cd ~/zephyrproject/zephyr
         west build -p auto -b bl654_dvk samples/bluetooth/mesh 
         ```
 
-      - To flash
+      - To flash connect PC to USB2 port of dev kit
 
         Before flashing make sure you fully erase the module first. 
         
