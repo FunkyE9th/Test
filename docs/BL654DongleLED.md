@@ -125,7 +125,7 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
      
      
      
-     To add your username to dialout do the following:
+     To add your username to the dialout group, do the following:
      
      ```
      sudo adduser your_username dialout 
