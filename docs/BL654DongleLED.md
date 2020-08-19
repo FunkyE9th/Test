@@ -85,7 +85,7 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
 
    - Plug the dongle into the PC and put it into Bootloader Mode
 
-     To put into Bootloader Mode, press the reset button on the dongle. In bootloader mode, you should  see the LED fade in and out slowly. 
+     To put into Bootloader Mode, press the reset button on the dongle. While in Bootloader Mode, you should  see the LED fade in and out slowly. 
 
      
 
