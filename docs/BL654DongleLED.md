@@ -121,7 +121,7 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
      
      
      
-     ![PermissionError13](C:\GitHub\Test\images\dongle\PermissionError13.png)
+     ![PermissionError13](../images/dongle/PermissionError13.png)
      
      
      
