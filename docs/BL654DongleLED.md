@@ -15,7 +15,7 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
    - Install nRFutil
 
      ```
-  pip3 install nrfutil
+	 pip3 install nrfutil
      ```
 
      nRFutil is a command-line utility that supports Device Firmware Updates (DFU). We will use it to generate a firmware update package and flash the package into the dongle.
