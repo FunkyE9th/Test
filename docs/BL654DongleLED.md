@@ -12,18 +12,14 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
 
    - You followed our [Zephyr Getting Started Guide](ubuntu.md) on how to setup the Zephyr development environment (i.e. Steps 1 - 5)
 
-   - Make sure you have at least version 20.0.2 of pip3 installed
-
-   - Make sure you have at least version 3.8.2 of Python installed
-
    - Install nRFutil
 
      ```
-     pip3 install nrfutil
+  pip3 install nrfutil
      ```
 
      nRFutil is a command-line utility that supports Device Firmware Updates (DFU). We will use it to generate a firmware update package and flash the package into the dongle.
-
+   
      
 
 2. Modify the devicetree
