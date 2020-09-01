@@ -45,16 +45,16 @@ The goal of this tutorial is to give you a simple example that can get you start
 
       For this demo we will use the BL652 dev kit for node 1
 
-      - To build for BL652:
+      - To build for BL652
 
         ```
         cd ~/zephyrproject/zephyr
         west build -p auto -b bl652_dvk samples/bluetooth/mesh 
         ```
 
-      - To flash
+      - To flash connect PC to USB2 port of dev kit
 
-        Before flashing make sure you fully erase the module first. 
+        Before flashing make sure you fully erase the module first
         
         ```
         nrfjprog -e
@@ -85,7 +85,7 @@ The goal of this tutorial is to give you a simple example that can get you start
 
       - To flash connect PC to USB2 port of dev kit
 
-        Before flashing make sure you fully erase the module first. 
+        Before flashing make sure you fully erase the module first 
         
         ```
         nrfjprog -e
@@ -106,7 +106,7 @@ The goal of this tutorial is to give you a simple example that can get you start
 
         
 
-      - To build for BL654 connect PC to USB2 port of dev kit
+      - To build for BL654 
 
         ```
         cd ~/zephyrproject/zephyr
@@ -115,7 +115,7 @@ The goal of this tutorial is to give you a simple example that can get you start
 
       - To flash connect PC to USB2 port of dev kit
 
-        Before flashing make sure you fully erase the module first. 
+        Before flashing make sure you fully erase the module first 
         
         ```
         nrfjprog -e
