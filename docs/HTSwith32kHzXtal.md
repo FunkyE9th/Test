@@ -92,12 +92,11 @@ For designs that require the least amount of current consumption, it's recommend
      nrfjprog -e
      west flash
      ```
-   ```
      
-   After flashing, the module should automatically go into advertising mode.
+     After flashing, the module should automatically go into advertising mode.
      
      
-   ```
+
 
 6. Connect to the module using nRF Toolbox
 
