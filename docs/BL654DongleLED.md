@@ -1,10 +1,10 @@
 # How to map LED0 to the BL654 Dongle's (451-00004) LED
 
-Currently, the BL654 dongle (Part Number: 451-00004) does not have its own Zephyr board files. However, with some minor modifications, we can use Nordic Semiconductor's nrf52840 dongle board files with the BL654 dongle.
+Currently, the BL654 dongle (Part Number: 451-00004) does not have its own Zephyr board files. However, by using [devicetree overlays](https://docs.zephyrproject.org/latest/guides/dts/howtos.html#set-devicetree-overlays), we can use Nordic Semiconductor's board file and make it work with the BL654 Dongle.
 
-In this tutorial, we will show you how to modify the devicetree from the nrf52840 dongle board files, so that the correct GPIO is mapped to the BL654 dongle's LED. We will then build the Blinky sample app and flash it into the BL654 dongle.
+In this tutorial, we will show you how to create an overlay file to remap the correct GPIO to the BL654 dongle's LED. We will then build the Blinky sample app and flash it into the BL654 dongle.
 
-If you are not familiar with device trees, please refer to [Zephyr Devicetree](https://docs.zephyrproject.org/latest/guides/dts/index.html).
+If you are not familiar with devicetrees, please refer to [Zephyr Devicetree](https://docs.zephyrproject.org/latest/guides/dts/index.html).
 
 
 
@@ -22,46 +22,23 @@ If you are not familiar with device trees, please refer to [Zephyr Devicetree](h
    
      
 
-2. Modify the devicetree
+2. Create an devicetree overlay
 
    There are 2 required changes:
 
-   - Map the correct GPIO to the BL654 dongle's LED. BL654 uses GPIO13.
-   - Change the pin configuration so that it's active high 
+   - Create a directory named "boards" in the samples/basic/blinky  directory
 
-   
+   - Create a file called nrf52840dongle_nrf52840.overlay in samples/basic/blinky/boards
 
-   Open ~/zephyrproject/zephyr/boards/arm/nrf52840dongle_nrf52840/nrf52840dongle_nrf52840.dts with a text editor and modify the devicetree as shown below.
+   - Open  nrf52840dongle_nrf52840.overlay file with a text editor, and then copy and paste the code below onto the overlay.
 
-   
+     ```
+     &led0_green{ 
+         gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>; 
+     }
+     ```
 
-   Original:
-
-   ```
-   	leds {
-   		compatible = "gpio-leds";
-   		led0_green: led_0 {
-   			gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;
-   			label = "Green LED 0";
-   		};
-   		.
-   		.
-   		.
-   ```
-
-   Modified:
-
-   ```
-   	leds {
-   		compatible = "gpio-leds";
-   		led0_green: led_0 {
-   			gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
-   			label = "Green LED 0";
-   		};
-   		.
-   		.
-   		.
-   ```
+   - Save the file
 
 3. Build Blinky
 
