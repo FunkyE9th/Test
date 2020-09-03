@@ -22,9 +22,7 @@ If you are not familiar with devicetrees, please refer to [Zephyr Devicetree](ht
    
      
 
-2. Create an devicetree overlay
-
-   There are 2 required changes:
+2. Create a devicetree overlay
 
    - Create a directory named "boards" in the samples/basic/blinky  directory
 
@@ -33,11 +31,11 @@ If you are not familiar with devicetrees, please refer to [Zephyr Devicetree](ht
    - Open  nrf52840dongle_nrf52840.overlay file with a text editor, and then copy and paste the code below onto the overlay.
 
      ```
-     &led0_green{ 
+  &led0_green{ 
          gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>; 
      }
      ```
-
+   
    - Save the file
 
 3. Build Blinky
