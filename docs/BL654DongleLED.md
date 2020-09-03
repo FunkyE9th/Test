@@ -26,7 +26,7 @@ If you are not familiar with devicetrees, please refer to [Zephyr Devicetree](ht
 
    - Create a directory named "boards" in the samples/basic/blinky  directory
 
-   - With a text editor, create a file called nrf52840dongle_nrf52840.overlay in the samples/basic/blinky/boards
+   - With a text editor, create a file named "nrf52840dongle_nrf52840.overlay" in the samples/basic/blinky/boards
 
    - Copy and paste the code below onto the overlay
 
