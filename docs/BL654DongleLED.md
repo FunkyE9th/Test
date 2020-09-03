@@ -28,7 +28,7 @@ If you are not familiar with devicetrees, please refer to [Zephyr Devicetree](ht
 
    - With a text editor, create a file named "nrf52840dongle_nrf52840.overlay" in the samples/basic/blinky/boards
 
-   - Copy and paste the code below onto the overlay
+   - Copy and paste the code below onto the overlay. This remaps LED0 to GPIO 13 and makes it active high.
 
      ```
      &led0_green{ 
