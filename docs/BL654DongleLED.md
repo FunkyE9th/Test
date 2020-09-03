@@ -31,7 +31,7 @@ If you are not familiar with devicetrees, please refer to [Zephyr Devicetree](ht
    - Open  nrf52840dongle_nrf52840.overlay file with a text editor, and then copy and paste the code below onto the overlay.
 
      ```
-  &led0_green{ 
+     &led0_green{ 
          gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>; 
      }
      ```
