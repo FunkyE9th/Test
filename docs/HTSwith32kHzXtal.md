@@ -24,9 +24,9 @@ For designs that require the least amount of current consumption, it's recommend
 
      
 
-3. Create .conf file to disable the internal RC.
+3. Create a .conf file to disable the internal RC.
 
-   - With a text editor, create a .conf file in the samples/bluetooth/peripheral_ht /boards directory. If the "boards" directory does not exist create it.
+   - With a text editor, create a .conf file in the samples/bluetooth/peripheral_ht /boards directory. If the "boards" directory does not, exist create it.
 
      For the BL652, create bl652_dvk.conf
 
@@ -36,7 +36,7 @@ For designs that require the least amount of current consumption, it's recommend
 
      
 
-   - Copy and paste code below into the .conf file
+   - Copy and paste code below onto the .conf file
 
      ```
      # Disabling the internal RC will, enable the external crystal
