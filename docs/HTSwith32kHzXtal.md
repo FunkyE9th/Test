@@ -36,12 +36,12 @@ For designs that require the least amount of current consumption, it's recommend
 
      
 
-   - Copy and paste code below onto the .conf file
+   - Copy and paste code below onto the .conf file you created
 
      ```
-     # Disabling the internal RC will enable the external crystal
-     CONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=n 
-     CONFIG_CLOCK_CONTROL_NRF_K32SRC_500PPM=n 
+     # 32kHz clock source 
+     CONFIG_CLOCK_CONTROL_NRF_K32SRC_XTAL=y 
+     CONFIG_CLOCK_CONTROL_NRF_K32SRC_20PPM=y 
      ```
 
      
